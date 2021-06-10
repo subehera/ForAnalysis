@@ -1,3 +1,10 @@
-Step1:
+STEP1:
 Download the STARLight MC form this link "https://starlight.hepforge.org/" and generate the events as per your physics interest. You can change the PDGID for the 2-photon and vector meson channel.
 Please note down the crossection value for the specific channel as your interest b/c it will require for the official production.
+When you run the starlight MC you will get slight.out as as output data file. Use the macro to convert the starlight events to LHE events. 
+STEP2:
+There we need the driver command to work in cmssw interface
+LHE  -> GS -> DIGI -> RECO , we need three cmsDriver command to reach the reco step.
+Create the cmssw package you need and use the following driver command to get three different .py config file.
+you need to store the LHE events in eos for the crab job submission.
+You can use the crab config I attached in this git.
