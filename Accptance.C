@@ -246,7 +246,7 @@ void Accptance()
   TH1D  *GenEventsPTBeforeCut = new TH1D("GenEventsPTBeforeCut", "Generated-nocut", 5, 0., 1.0);
   TH1D  *GenEventsRapBeforeCut= new TH1D("GenEventsRapBeforeCut", "Generated-nocut", 35, -4., 4.);
 
-  TH2D  *GenEventsAcc = new TH2D("GenEventsAcc", "", 5, 0., 1.0, 35, -4., 4.);
+  //TH2D  *GenEventsAcc = new TH2D("GenEventsAcc", "", 5, 0., 1.0, 35, -4., 4.);
   
   TLorentzVector muon1;
   TLorentzVector muon2;
@@ -381,7 +381,7 @@ void Accptance()
   GenEventsRapRpAlowpT->Write();
   EffPtRpArapNeg->Write();
   EffRapRpAlowpT->Write();
-  GenEventsAcc->Write();
+  //GenEventsAcc->Write();
 }//--E O main fun
 
 
